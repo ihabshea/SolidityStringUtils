@@ -1,5 +1,5 @@
 library StringUtils {
-    function compare(string memory _a, string memory _b) returns (int256) {
+    function compare(string memory _a, string memory _b) public returns (int256) {
         bytes memory a = bytes(_a);
         bytes memory b = bytes(_b);
         uint256 minLength = a.length;
